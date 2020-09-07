@@ -13,30 +13,33 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Das ist eine Überschrift</h1>
-    <img
-      src="img/burger.jpg"
-      alt="Burger auf Teller"
-      width="700"
-      title="Hallo Gabriela"
-    />
-    <p id="nummer-1">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-      Adipisci ipsa itaque nobis possimus distinctio sed. Error
-      doloremque nesciunt eum labore dolores at quisquam harum omnis,
-      deleniti cum soluta facilis quo.
-    </p>
+    <header>
+      <a href="#">
+        <img src="img/logo.png" alt="Logo" height="40">
+      </a>
 
-    <p id="nummer-2">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-      Adipisci ipsa itaque nobis possimus distinctio sed. Error
-      doloremque nesciunt eum labore dolores at quisquam harum omnis,
-      deleniti cum soluta facilis quo.  
-    </p>
+      <button id="burger">
+        <img src="img/menu.svg" alt="zum Hauptmenü" height="40">
+      </button>
 
-    <div class="aqua"></div>
-    <div></div>
-    <div class="aqua"></div>
+      <nav class="hidden">
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Rezepte</a>
+          </li>
+          <li>
+            <a href="#">Kategorien</a>
+          </li>
+          <li>
+            <a href="#">Über uns</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
+    <script src="js/menu.js"></script>
   </body>
 </html>

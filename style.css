@@ -1,34 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: red;
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  line-height: 1.5;
+}
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
-h1{
-    color: yellow;
-    font-family: 'Courier New', Courier, monospace;
+li {
+  list-style-type: none;
+  text-align: center;
+  margin: 0 10px;
 }
-    
-p{
+
+li a:hover{
     color: white;
-    background-color: black; 
+    background-color: #374a67;
+    padding: 5px;
 }
 
-/* Selector ID mit dem Namen nummer-1 
-* ID in html wird zu einem #
-*/
-#nummer-1 {
-    background-color: pink;
-}
-#nummer-2 {
-    color: green;
+.hidden {
+  display: none;
 }
 
-div{
-    height: 100px;
-    background-color: blue;
-    margin: 10px;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.aqua {
-    background-color: aquamarine;
+@media (min-width: 60em) {
+  .hidden {
+    display: block;
+  }
+  #burger {
+    display: none;
+  }
+  header ul {
+    display: flex;
+  }
 }
