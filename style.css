@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -20,14 +20,22 @@ li {
   margin: 0 10px;
 }
 
-li a:hover{
-    color: white;
-    background-color: #374a67;
-    padding: 5px;
+li a:hover {
+  color: white;
+  background-color: #374a67;
+  padding: 5px;
 }
 
 .hidden {
   display: none;
+}
+
+.show {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 64px;
+  width: 100%;
 }
 
 header {
@@ -39,6 +47,30 @@ header {
   padding-right: 5%;
 }
 
+#burger {
+  border: none;
+  background: transparent;
+}
+
+#hero {
+  background-image: url('img/intro.jpg');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.button {
+  border: #374a67 solid 2px;
+  background-color: white;
+  color: #374a67;
+  padding: 16px;
+  border-radius: 5px;
+}
+
+
 @media (min-width: 60em) {
   .hidden {
     display: block;
@@ -46,7 +78,9 @@ header {
   #burger {
     display: none;
   }
-  header ul {
+  nav ul {
     display: flex;
+    margin: 0;
+    padding: 0;
   }
 }
